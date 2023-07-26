@@ -7,11 +7,9 @@
 Console.Write("Введите число N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-string PrintNumbers(int start, int end) // start = 1, end = n
-{
-    // Базовый случай
-    if (start == end) return start.ToString();
-    // Рекурсивный случай - вызвать функцию внутри функции 
+string PrintNumbers(int start, int end) 
+{ 
+    if (start == end) return start.ToString(); 
     return start + ", " + PrintNumbers(start - 1, end);
 }
 
